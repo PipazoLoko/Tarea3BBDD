@@ -1,6 +1,3 @@
-# ----------------------------------------------------------------
-# 1. Entorno Virtual de Python
-# ----------------------------------------------------------------
 # Ignora la carpeta del entorno virtual
 venv/
 *.venv/
@@ -21,18 +18,18 @@ __pycache__/
 # ----------------------------------------------------------------
 # 4. Datos y Salidas del Proyecto (¡Importante!)
 # ----------------------------------------------------------------
-# [cite_start]Ignora los 700+ archivos de discursos (datos crudos) [cite: 116]
+# Ignora los 700+ archivos de discursos
 *.txt
 !requirements.txt
 
-# [cite_start]Ignora el archivo .rar original del corpus [cite: 116, 151]
+# Ignora el archivo .rar original del corpus
 *.rar
 
-# [cite_start]Ignora el archivo JSON final que se genera (entregable) [cite: 68]
+# Ignora el archivo JSON final que se genera
 discursos-final-*.json
 
 # ----------------------------------------------------------------
-# 5. Archivos de Sistema Operativo (Opcional pero recomendado)
+# 5. Archivos de Sistema Operativo (Opcional)
 # ----------------------------------------------------------------
 # macOS
 .DS_Store

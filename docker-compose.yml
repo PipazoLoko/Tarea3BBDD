@@ -1,0 +1,42 @@
+
+services:
+  # --- Servicio 1: El primer nodo de Mongo ---
+  mongo1:
+    image: mongo
+    container_name: mongo1
+    # La tarea sugiere los puertos 30001, 30002, 30003 
+    # Mapeamos el puerto 30001 de TU máquina (host) al 27017 DENTRO del contenedor
+    ports:
+      - "30001:27017"
+    # El comando para iniciar Mongo como parte de un "Replica Set" 
+    command: ["mongod", "--replSet", "my-replicaset"]
+    # 'volumes' hace que los datos sean persistentes (no se borren)
+    volumes:
+      - mongo1-data:/data/db
+
+  # --- Servicio 2: El segundo nodo de Mongo ---
+  mongo2:
+    image: mongo
+    container_name: mongo2
+    ports:
+      - "30002:27017"
+    command: ["mongod", "--replSet", "my-replicaset"]
+    volumes:
+      - mongo2-data:/data/db
+
+  # --- Servicio 3: El tercer nodo de Mongo ---
+  mongo3:
+    image: mongo
+    container_name: mongo3
+    ports:
+      - "30003:27017"
+    command: ["mongod", "--replSet", "my-replicaset"]
+    volumes:
+      - mongo3-data:/data/db
+
+# Definimos los "volúmenes" de datos para que Docker los gestione
+# Esto es lo que guarda tu base de datos si apagas los contenedores
+volumes:
+  mongo1-data:
+  mongo2-data:
+  mongo3-data:
