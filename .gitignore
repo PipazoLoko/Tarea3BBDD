@@ -1,0 +1,40 @@
+# ----------------------------------------------------------------
+# 1. Entorno Virtual de Python
+# ----------------------------------------------------------------
+# Ignora la carpeta del entorno virtual
+venv/
+*.venv/
+.venv/
+
+# ----------------------------------------------------------------
+# 2. Archivos de Python (Cache y compilados)
+# ----------------------------------------------------------------
+__pycache__/
+*.pyc
+
+# ----------------------------------------------------------------
+# 3. Archivos de Jupyter Notebook
+# ----------------------------------------------------------------
+# Ignora la carpeta de checkpoints autogenerada
+.ipynb_checkpoints/
+
+# ----------------------------------------------------------------
+# 4. Datos y Salidas del Proyecto (¡Importante!)
+# ----------------------------------------------------------------
+# [cite_start]Ignora los 700+ archivos de discursos (datos crudos) [cite: 116]
+*.txt
+
+# [cite_start]Ignora el archivo .rar original del corpus [cite: 116, 151]
+*.rar
+
+# [cite_start]Ignora el archivo JSON final que se genera (entregable) [cite: 68]
+discursos-final-*.json
+
+# ----------------------------------------------------------------
+# 5. Archivos de Sistema Operativo (Opcional pero recomendado)
+# ----------------------------------------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
