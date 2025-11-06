@@ -23,6 +23,7 @@ __pycache__/
 # ----------------------------------------------------------------
 # [cite_start]Ignora los 700+ archivos de discursos (datos crudos) [cite: 116]
 *.txt
+!requirements.txt
 
 # [cite_start]Ignora el archivo .rar original del corpus [cite: 116, 151]
 *.rar
