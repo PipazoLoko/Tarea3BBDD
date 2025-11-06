@@ -21,6 +21,7 @@ __pycache__/
 # Ignora los 700+ archivos de discursos
 *.txt
 !requirements.txt
+!README.txt
 
 # Ignora el archivo .rar original del corpus
 *.rar
