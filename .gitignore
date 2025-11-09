@@ -1,39 +1,6 @@
-# Ignora la carpeta del entorno virtual
-venv/
-*.venv/
+.gitignore
+.tarea/
 .venv/
-
-# ----------------------------------------------------------------
-# 2. Archivos de Python (Cache y compilados)
-# ----------------------------------------------------------------
-__pycache__/
-*.pyc
-
-# ----------------------------------------------------------------
-# 3. Archivos de Jupyter Notebook
-# ----------------------------------------------------------------
-# Ignora la carpeta de checkpoints autogenerada
-.ipynb_checkpoints/
-
-# ----------------------------------------------------------------
-# 4. Datos y Salidas del Proyecto (¡Importante!)
-# ----------------------------------------------------------------
-# Ignora los 700+ archivos de discursos
-*.txt
-!requirements.txt
-!README.txt
-
-# Ignora el archivo .rar original del corpus
-*.rar
-
-# Ignora el archivo JSON final que se genera
-discursos-final-*.json
-
-# ----------------------------------------------------------------
-# 5. Archivos de Sistema Operativo (Opcional)
-# ----------------------------------------------------------------
-# macOS
+data/
+DiscursosOriginales/
 .DS_Store
-
-# Windows
-Thumbs.db
