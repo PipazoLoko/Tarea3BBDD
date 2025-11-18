@@ -1,6 +1,9 @@
 .gitignore
 .tarea/
 .venv/
+venv/
 data/
 DiscursosOriginales/
+discursos-final-*.json
 .DS_Store
+*.zip
